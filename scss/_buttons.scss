@@ -1,0 +1,54 @@
+.btn-primary,
+.btn-secondary {
+  padding: 0 2.5rem;
+  line-height: 4.2rem;
+  border-radius: 12.2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  @include flex(row, center, center);
+  svg {
+    margin-left: 15px;
+  }
+}
+
+.btn-primary {
+  background-color: $brand-red;
+  border: 1px solid $brand-red;
+  color: $brand-offwhite;
+  transition: all 0.3s;
+  svg {
+    path {
+      transition: all 0.3s;
+      stroke: $brand-offwhite;
+    }
+  }
+  &:hover {
+    background-color: $brand-light-red;
+    border: 1px solid $brand-light-red;
+    color: $brand-offwhite;
+  }
+}
+
+.btn-secondary {
+  background-color: $brand-white;
+  border: 1px solid $gray-100;
+  color: $gray-500;
+  transition: all 0.3s;
+  svg {
+    path {
+      transition: all 0.3s;
+      stroke: $gray-500;
+    }
+  }
+  &:hover {
+    background-color: $brand-white;
+    border: 1px solid $gray-300;
+    color: $gray-800;
+    svg {
+      path {
+        stroke: $gray-800;
+      }
+    }
+  }
+}

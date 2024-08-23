@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+html {
+  font-size: 62.5%;
+  @include responsive(1300px) {
+    font-size: 58%;
+  }
+  @include responsive(991px) {
+    font-size: 62.5%;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+b {
+  background-color: $brand-red;
+  color: $brand-white;
+  font-weight: normal;
+}
+
+a {
+  background-color: transparent;
+  cursor: pointer;
+}

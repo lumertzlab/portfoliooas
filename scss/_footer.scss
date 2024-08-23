@@ -1,0 +1,38 @@
+footer {
+  background-color: $brand-gray;
+  border-bottom: 4px solid $brand-red;
+  padding-top: 4.9rem;
+  .top {
+    padding-bottom: 4.9rem;
+    @include flex(row, center, space-between);
+    .share {
+      @include flex(row, center, center);
+      ul {
+        margin-left: 3rem;
+        @include flex(row, center, space-between);
+        li {
+          &:not(:first-child) {
+            margin-left: 3rem;
+          }
+        }
+      }
+    }
+  }
+  .msg {
+    text-align: center;
+    p {
+      width: 100%;
+      color: $brand-white;
+      font-size: 1.4rem;
+    }
+  }
+  @include responsive(767px) {
+    .top {
+      img {
+        margin-bottom: 3rem;
+      }
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

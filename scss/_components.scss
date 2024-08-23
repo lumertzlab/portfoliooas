@@ -1,0 +1,296 @@
+.mb-s {
+  margin-bottom: 30px !important;
+}
+
+.interativo-container {
+  position: relative;
+  padding-top: 56%;
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid $gray-050;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  .interativo {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6rem !important;
+  }
+  @include responsive(991px) {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid $gray-050;
+    .interativo {
+      padding-bottom: 4rem !important;
+    }
+  }
+}
+
+.h5p-container {
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid $gray-050;
+  .h5p-video {
+    height: 720px;
+    width: 100%;
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+  }
+  @include responsive(991px) {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid $gray-050;
+  }
+}
+
+.samba-video {
+  @include responsive(600px) {
+    height: 370px;
+  }
+}
+
+.img-container {
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid $gray-050;
+  .modal-target {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  @include responsive(991px) {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid $gray-050;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding: 100px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    opacity: 1 !important;
+    max-width: 1000px;
+  }
+  .modal-caption {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    max-width: 1000px;
+    padding: 12px 25px;
+    text-align: center;
+    color: white;
+    background-color: #ffffff63;
+    backdrop-filter: blur(2px);
+    border-radius: 100px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      top: -17px;
+      left: 0;
+      right: 0;
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff63;
+      backdrop-filter: blur(2px);
+      transform: rotate(90deg);
+    }
+  }
+  .modal-content,
+  .modal-caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-atransform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+.button-container {
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid $gray-050;
+  .container__secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .btn__level-one,
+  .btn__level-two,
+  .btn__level-three {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0784313725);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $brand-gray;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 250px;
+    .btn__hover {
+      background: #bb243ef7;
+      color: $brand-white;
+      height: 100%;
+      left: 0;
+      margin-left: -100%;
+      position: absolute;
+      top: 0;
+      transition: 0.7s ease-out;
+      width: 100%;
+      border-radius: 100px;
+      .btn__hover-title {
+        width: 100%;
+        margin-top: -10px;
+        left: 0;
+        top: 50%;
+        line-height: normal;
+        position: absolute;
+        text-align: center;
+      }
+    }
+    &:hover {
+      .btn__hover {
+        margin-left: 0;
+      }
+    }
+  }
+  @include responsive(991px) {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid $gray-050;
+  }
+  @include responsive(700px) {
+    .btn__level-one,
+    .btn__level-two,
+    .btn__level-three {
+      font-size: 1.4rem;
+      line-height: 45px;
+      width: 200px;
+    }
+  }
+  @include responsive(550px) {
+    .container__secondary {
+      width: 100%;
+    }
+    .btn__level-one,
+    .btn__level-two,
+    .btn__level-three {
+      line-height: 40px;
+      width: 100%;
+    }
+  }
+  @include responsive(550px) {
+    .container__secondary {
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+    .btn__level-one,
+    .btn__level-two,
+    .btn__level-three {
+      font-size: 1.3rem;
+    }
+  }
+  @include responsive(360px) {
+    .container__secondary {
+      display: flex;
+      flex-direction: column;
+      row-gap: initial;
+      column-gap: initial;
+    }
+    .btn__level-one,
+    .btn__level-two,
+    .btn__level-three {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.img__link-container {
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid $gray-050;
+  img {
+    width: 100%;
+  }
+  @include responsive(991px) {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid $gray-050;
+  }
+}

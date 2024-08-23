@@ -1,0 +1,393 @@
+.s-hero {
+  width: 100%;
+  min-height: 80rem;
+  height: 100%;
+  background: url("../img/bg-hero.png") no-repeat left center;
+  background-size: cover;
+  padding: 9rem 0;
+  @include flex(row, center, flex-start);
+  .container {
+    @include flex(row, flex-start, space-between);
+  }
+  .text {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    @include flex(column, center, center);
+    h1 {
+      color: $brand-white;
+    }
+    h3 {
+      color: $brand-blue;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $gray-050;
+      letter-spacing: -1px;
+      margin-top: 2rem;
+      max-width: 40vw;
+    }
+  }
+  @include responsive(991px) {
+    background-size: cover;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .text {
+      max-width: 100%;
+      @include flex(column, center, center);
+      h3 {
+        text-align: center;
+        font-size: 2rem;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        max-width: 60vw;
+      }
+    }
+  }
+  @include responsive(800px) {
+    .text {
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  @include responsive(480px) {
+    .text {
+      h3 {
+        font-size: 1.6rem;
+        line-height: 120%;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 1.6rem;
+        max-width: 100vw;
+      }
+    }
+  }
+}
+
+.s-objects {
+  padding-top: 12.9rem;
+  .container {
+    @include flex(column, flex-start, center);
+    .sec-header {
+      width: 100%;
+      @include flex(column, flex-start, center);
+      h4 {
+        @include flex(row, center, center);
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-left: 21px;
+        color: $brand-red;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          left: 0;
+          border-radius: 50rem;
+          background-color: $brand-red;
+        }
+      }
+      .blank__space {
+        margin: 15px 0 30px 0;
+        width: 100%;
+        height: 1px;
+        background-color: $gray-050;
+      }
+    }
+    .sec-content {
+      width: 100%;
+      p {
+        color: $gray-600;
+        font-size: 1.8rem;
+        line-height: 150%;
+        margin-bottom: 1rem;
+        &:first-of-type {
+          margin-top: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      .tag {
+        font-size: 1.6rem;
+        line-height: 150%;
+        font-weight: 600;
+        color: $brand-white;
+        background-color: $brand-red;
+        padding: 5px 15px;
+        width: fit-content;
+        margin-bottom: 30px;
+        @include responsive(991px);
+      }
+    }
+  }
+  @include responsive(991px) {
+    padding-top: 9rem;
+    .container {
+      @include flex(column, flex-start, center);
+      .sec-title {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        top: initial;
+        margin-bottom: 3rem;
+        h4 {
+          margin-bottom: 0.5rem;
+        }
+        h2 {
+          font-size: 3.6rem;
+        }
+      }
+      .sec-content {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  @include responsive(550px) {
+    .container {
+      .sec-title {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.s-intro {
+  padding-top: 12.9rem;
+  .container {
+    @include flex(row, flex-start, center);
+    .sec-title {
+      flex: 0 0 30%;
+      padding-right: 30px;
+      position: sticky;
+      top: 11rem;
+      h4 {
+        color: $brand-red;
+        margin-bottom: 1rem;
+      }
+    }
+    .sec-content {
+      width: 100%;
+      p {
+        color: $gray-600;
+        font-size: 1.8rem;
+        line-height: 150%;
+        margin-bottom: 1rem;
+        &:first-of-type {
+          margin-top: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      .tag {
+        font-size: 1.6rem;
+        line-height: 150%;
+        font-weight: 600;
+        color: $brand-white;
+        background-color: $brand-red;
+        padding: 5px 15px;
+        width: fit-content;
+        margin-bottom: 30px;
+        @include responsive(991px);
+      }
+    }
+  }
+  @include responsive(991px) {
+    padding-top: 9rem;
+    .container {
+      @include flex(column, flex-start, center);
+      .sec-title {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        top: initial;
+        margin-bottom: 3rem;
+        h4 {
+          margin-bottom: 0.5rem;
+        }
+        h2 {
+          font-size: 3.6rem;
+        }
+      }
+      .sec-content {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  @include responsive(550px) {
+    .container {
+      .sec-title {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.s-content {
+  padding-top: 12.9rem;
+  .container {
+    @include flex(row, flex-start, center);
+    .sec-title {
+      flex: 0 0 30%;
+      padding-left: 30px;
+      position: sticky;
+      top: 11rem;
+      .div__title {
+        border-radius: 0.7rem 0.7rem 0 0;
+        padding: 1.5rem;
+        background-color: $brand-white;
+        border: 1px solid $gray-050;
+        border-bottom: none;
+        span {
+          font-family: "Poppins", sans-serif;
+          color: $brand-red;
+          font-size: 2rem;
+          font-weight: 600;
+          letter-spacing: -1px;
+        }
+        .blank__space {
+          width: 100%;
+          height: 1px;
+          background-color: #d4dce3;
+          margin: 15px 0;
+        }
+        p {
+          font-size: 1.4rem;
+          color: #496173;
+        }
+      }
+      ul {
+        width: 100%;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        list-style: none;
+        border-radius: 0 0 0.7rem 0.7rem;
+        gap: 1rem;
+        background-color: $brand-white;
+        border: 1px solid $gray-050;
+        border-top: none;
+        @include flex(column, center, center);
+        li {
+          display: block;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          a {
+            position: relative;
+            display: block;
+            color: #496173;
+            font-size: 1.4rem;
+            transition: 0.25s;
+            line-height: 1;
+            padding: 1rem;
+            min-height: 4.5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $gray-050;
+            border-radius: 0.4rem;
+            &:hover {
+              background-color: #efefef;
+            }
+          }
+        }
+      }
+    }
+    .sec-content {
+      width: 100%;
+      p {
+        color: $gray-600;
+        font-size: 1.8rem;
+        line-height: 150%;
+        margin-bottom: 1rem;
+        &:first-of-type {
+          margin-top: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      .tag {
+        font-size: 1.6rem;
+        line-height: 150%;
+        font-weight: 600;
+        color: $brand-white;
+        background-color: $brand-red;
+        padding: 5px 15px;
+        width: fit-content;
+        margin-bottom: 30px;
+        @include responsive(991px);
+      }
+      .obj-int {
+        padding-bottom: 6rem;
+        margin-bottom: 6rem;
+        border-bottom: 2px solid $gray-050;
+        &:nth-last-child(2) {
+          border: none;
+          padding-bottom: 12.9rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    padding-top: 9rem;
+    .container {
+      @include flex(column, flex-start, center);
+      .sec-title {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        top: initial;
+        margin-bottom: 3rem;
+        h4 {
+          margin-bottom: 0.5rem;
+        }
+        h2 {
+          font-size: 3.6rem;
+        }
+      }
+      .sec-content {
+        p {
+          font-size: 1.6rem;
+        }
+        .obj-int {
+          padding-bottom: 4rem;
+          margin-bottom: 4rem;
+          border-bottom: 1px solid $gray-050;
+        }
+      }
+    }
+  }
+  @include responsive(550px) {
+    .container {
+      .sec-title {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
