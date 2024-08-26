@@ -294,3 +294,40 @@
     border-bottom: 1px solid $gray-050;
   }
 }
+
+.splash-screen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: $brand-red;
+  animation: lift 0.8s ease-in-out;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+  z-index: 99999;
+  .splash-screen__secondary {
+    @include flex(row, center, center);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $gray-050;
+    animation: lift 0.8s ease-in-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+    img {
+      width: 260px;
+    }
+  }
+
+  @keyframes lift {
+    0% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0);
+      opacity: 1;
+      visibility: hidden;
+    }
+  }
+}

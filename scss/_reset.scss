@@ -12,6 +12,17 @@
 
 body {
   background-color: #fcfcfc;
+  overflow-x: hidden;
+  animation: appear 3.5s ease-in-out;
+  animation-delay: 0s;
+  @keyframes appear {
+    0% {
+      overflow: hidden;
+    }
+    100% {
+      overflow: initial;
+    }
+  }
 }
 
 html {
