@@ -21,7 +21,7 @@
 
     <header>
         <div class="home-container">
-            <a href="" class="logo"></a>
+            <a href="../index.html" class="logo"></a>
         </div>
     </header>
 
@@ -61,17 +61,18 @@
                 <div class="sec-content">
                     {{#each objeto}}
                     <div class="obj-div">
-                        <div class="img-bg" style="background: url('{{{img_objeto}}}') no-repeat left center;">
-                            <div class="obj-tag">
-                                <span>{{{tag_objeto}}}</span>
-                            </div>
-                        </div>
+                        <div class="img-bg" style="background: url('{{{img_objeto}}}') no-repeat left center;"></div>
                         <div class="cont-div">
                             <div class="infos">
                                 <h2>{{{titulo_objeto}}}</h2>
                                 <p>{{{texto_objeto}}}</p>
                             </div>
-                            <a class="card-btn" href="{{{link_objeto}}}">ACESSAR OBJETO</a>
+                            <a class="card-btn" href="./objetos/{{{link_objeto}}}.html">
+                                ACESSAR OBJETO
+                                <div class="btn__hover">
+                                    <span class="btn__hover-title">Acessar</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     {{/each}}

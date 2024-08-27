@@ -9,43 +9,37 @@ const input = {
   objeto: [
     {
       img_objeto: "../img/bg-hero.png",
-      tag_objeto: "2 Subcategorias",
       titulo_objeto: "Interativos H5P",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
-      link_objeto: "../podcasts.html",
     },
     {
       img_objeto: "../img/bg-hero.png",
-      tag_objeto: "2 Subcategorias",
       titulo_objeto: "Interativos HTML",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
     },
     {
       img_objeto: "../img/bg-hero.png",
-      tag_objeto: "2 Subcategorias",
       titulo_objeto: "Objetos 3D",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
     },
     {
       img_objeto: "../img/bg-hero.png",
-      tag_objeto: "2 Subcategorias",
       titulo_objeto: "<i>Podcasts</i>",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
     },
     {
       img_objeto: "../img/bg-hero.png",
-      tag_objeto: "2 Subcategorias",
       titulo_objeto: "Vídeos",
       texto_objeto:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
+        "Confira a seguir alguns dos principais formatos do audiovisual em nosso catálogo.",
+      link_objeto: "videos",
     },
     {
       img_objeto: "../img/bg-hero.png",
-      tag_objeto: "2 Subcategorias",
       titulo_objeto: "Vídeos Imersivos",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
