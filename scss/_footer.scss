@@ -2,6 +2,7 @@ footer {
   background-color: $brand-gray;
   border-bottom: 4px solid $brand-red;
   padding-top: 4.9rem;
+  margin-top: 14rem;
   .top {
     padding-bottom: 4.9rem;
     @include flex(row, center, space-between);

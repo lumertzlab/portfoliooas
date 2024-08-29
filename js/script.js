@@ -18,3 +18,27 @@ burger.addEventListener("click", function (e) {
   this.classList.toggle("active");
   nav.classList.toggle("active");
 });
+
+const sections = document.querySelectorAll("div[id]");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  let scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".sec-title a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".sec-title a[href*=" + sectionId + "]")
+        .classList.remove("active");
+    }
+  });
+}
