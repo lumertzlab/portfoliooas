@@ -141,10 +141,11 @@
     }
     p {
       font-size: 1.6rem;
-      text-align: end;
+      text-align: center;
       font-weight: 500;
       color: $gray-600;
       margin-top: 2rem;
+      line-height: 150%;
     }
     .mouse {
       height: 33px;
@@ -229,10 +230,10 @@
       }
     }
   }
-  @include responsive(800px) {
+  @include responsive(600px) {
     .text {
       p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -242,10 +243,6 @@
         font-size: 1.6rem;
         line-height: 120%;
         margin-bottom: 1.5rem;
-      }
-      p {
-        font-size: 1.6rem;
-        max-width: 100vw;
       }
     }
   }
@@ -299,6 +296,9 @@
           position: relative;
           height: 15rem;
           border-radius: 0.7rem 0.7rem 0 0;
+          background-size: cover;
+          background-position: left;
+          background-repeat: no-repeat;
           &::after {
             content: "";
             position: absolute;
@@ -586,17 +586,6 @@
           margin-top: 12rem;
           z-index: -1;
         }
-        // &::after {
-        //   content: "";
-        //   display: inline-block;
-        //   height: calc(100% - 11rem);
-        //   width: 3px;
-        //   background: $brand-red;
-        //   position: absolute;
-        //   left: 0;
-        //   top: 11rem;
-        //   z-index: -2;
-        // }
       }
       .sec-header {
         padding-top: 11rem;
@@ -698,6 +687,7 @@
     .container {
       @include flex(column, flex-start, center);
       .sec-title {
+        display: none;
         width: 100%;
         padding: 0;
         position: relative;
@@ -714,10 +704,27 @@
         p {
           font-size: 1.6rem;
         }
-        .obj-int {
-          padding-bottom: 4rem;
-          margin-bottom: 4rem;
-          border-bottom: 1px solid $gray-050;
+      }
+    }
+  }
+  @include responsive(900px) {
+    .container {
+      .sec-content {
+        .object-infos {
+          h3 {
+            font-size: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(767px) {
+    .container {
+      .sec-content {
+        .object-infos {
+          h3 {
+            font-size: 1.8rem;
+          }
         }
       }
     }
