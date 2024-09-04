@@ -40,6 +40,7 @@ header {
     border-radius: 0.3rem;
     font-size: 1.4rem;
     font-family: "Poppins", sans-serif;
+    color: #000000;
     .menu__button {
       position: relative;
       top: -1px;
@@ -143,21 +144,11 @@ header {
           &:hover {
             background-color: #efefef;
           }
-        }
-        &:nth-child(1) {
-          transition: all 275ms 275ms;
-        }
-        &:nth-child(2) {
-          transition: all 275ms 325ms;
-        }
-        &:nth-child(3) {
-          transition: all 275ms 375ms;
-        }
-        &:nth-child(4) {
-          transition: all 275ms 425ms;
-        }
-        &:nth-child(5) {
-          transition: all 275ms 475ms;
+          &.homeClass {
+            background-color: $brand-red;
+            color: $brand-white;
+            border: 1px solid $brand-red;
+          }
         }
       }
     }
@@ -198,10 +189,9 @@ header {
   }
   @include responsive(767px) {
     .navMenu {
-      max-width: 25rem;
       .nav__title {
         span {
-          font-size: 1.6rem;
+          font-size: 1.8rem;
         }
       }
     }

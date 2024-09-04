@@ -33,11 +33,11 @@ function navHighlighter() {
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
-        .querySelector(".sec-title a[href*=" + sectionId + "]")
+        .querySelector(".sec-title ul li a[href*=" + sectionId + "]")
         .classList.add("active");
     } else {
       document
-        .querySelector(".sec-title a[href*=" + sectionId + "]")
+        .querySelector(".sec-title ul li a[href*=" + sectionId + "]")
         .classList.remove("active");
     }
   });

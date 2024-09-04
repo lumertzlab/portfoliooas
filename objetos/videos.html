@@ -19,44 +19,6 @@
         </div>
     </div>
 
-    <header>
-        <div class="container">
-            <a href="../index.html" class="logo"></a>
-
-            <button class="navTrigger" id="navTrigger">
-                MENU
-                <div class="menu__button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-
-            <nav class="navMenu" id="navMenu">
-                <div class="nav__title">
-                    <span>Objetos de Aprendizagem</span>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#">Objeto interativo 01</a>
-                    </li>
-                    <li>
-                        <a href="#">Objeto interativo 02</a>
-                    </li>
-                    <li>
-                        <a href="#">Objeto interativo 03</a>
-                    </li>
-                    <li>
-                        <a href="#">Objeto interativo 04</a>
-                    </li>
-                    <li>
-                        <a href="#">Objeto interativo 05</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <main class="info_entrance"></main>
 
     <footer>
@@ -71,6 +33,37 @@
     </footer>
 
     <script id="video" type="text/x-handlebars-template">
+        <header>
+            <div class="container">
+                <a href="../index.html" class="logo"></a>
+    
+                <button class="navTrigger" id="navTrigger">
+                    MENU
+                    <div class="menu__button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+    
+                <nav class="navMenu" id="navMenu">
+                    <div class="nav__title">
+                        <span>Objetos de Aprendizagem</span>
+                    </div>
+                    <ul>
+                        {{#each general_menu}}
+                        <li>
+                            <a href="../objetos/{{{link_objeto}}}.html">{{{objeto}}}</a>
+                        </li>
+                        {{/each}}
+                        <li>
+                            <a class="homeClass" href="../index.html">⭠ Retornar ao catálogo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
         <section class="s-hero-objects" style="background-image: url(../img/{{{img_hero}}});">
             <div class="container">
                 <div class="text" data-aos="fade-right">
@@ -132,13 +125,14 @@
     <script src="https://imersys.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js'></script>
     <script src="../js/editavel.js"></script>
-    <script src="../js/script.js"></script>
+
     <script>
         const source = document.getElementById("video").innerHTML;
         const template = Handlebars.compile(source);
         const html = template(video);
         document.querySelector(".info_entrance").innerHTML = html;
     </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

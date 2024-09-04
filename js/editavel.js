@@ -1,45 +1,47 @@
 const input = {
-  video_hero: "./img/video_hero.mp4",
+  video_hero: "img/video-hero.mp4",
   tag_hero: "PORTFÓLIO",
-  titulo_hero: "Objetos de Aprendizagem",
+  titulo_hero: "Objetos de<br>Aprendizagem",
   texto_hero:
     "Lorem ipsum dolor sit amet. Ea illum consequuntur est itaque galisum est accusamus facere rem optio voluptatem.",
-  texto_sec_objeto: "CONHEÇA NOSSOS OBJETOS DE APRENDIZAGEM",
+  titulo_sec_objeto: "EXPERIÊNCIAS IMERSIVAS",
+  texto_sec_objeto:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
 
   objeto: [
     {
-      img_objeto: "../img/bg-hero.png",
+      img_objeto: "../img/banner-h5p.png",
       titulo_objeto: "Interativos H5P",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
     },
     {
-      img_objeto: "../img/banner_html.png",
+      img_objeto: "../img/banner-html.png",
       titulo_objeto: "Interativos HTML",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
     },
     {
-      img_objeto: "../img/bg-hero.png",
+      img_objeto: "../img/banner-3D.png",
       titulo_objeto: "Objetos 3D",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
     },
     {
-      img_objeto: "../img/banner_podcast.png",
+      img_objeto: "../img/banner-podcast.png",
       titulo_objeto: "<i>Podcasts</i>",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
     },
     {
-      img_objeto: "../img/banner_video.png",
+      img_objeto: "../img/banner-videos.png",
       titulo_objeto: "Vídeos",
       texto_objeto:
-        "Confira a seguir alguns dos principais formatos do audiovisual em nosso catálogo.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
       link_objeto: "videos",
     },
     {
-      img_objeto: "../img/bg-hero.png",
+      img_objeto: "../img/banner_videos-imersivos.png",
       titulo_objeto: "Vídeos Imersivos",
       texto_objeto:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
@@ -48,10 +50,36 @@ const input = {
 };
 
 const video = {
-  img_hero: "banner_video.png",
+  img_hero: "banner-videos.png",
   titulo_hero: "Vídeos",
   texto_hero:
-    "Confira a seguir alguns dos principais formatos do audiovisual em nosso catálogo.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates officiis excepturi aut corrupti itaque.",
+  general_menu: [
+    {
+      link_objeto: "",
+      objeto: "Interativos H5P",
+    },
+    {
+      link_objeto: "",
+      objeto: "Interativos HTML",
+    },
+    {
+      link_objeto: "",
+      objeto: "Objetos 3D",
+    },
+    {
+      link_objeto: "",
+      objeto: "<i>Podcasts</i>",
+    },
+    {
+      link_objeto: "videos",
+      objeto: "Vídeos",
+    },
+    {
+      link_objeto: "",
+      objeto: "Vídeos Imersivos",
+    },
+  ],
   item_menu: [
     {
       id: "sub01",
