@@ -16,7 +16,7 @@
     text-align: center;
     @include flex(column, center, center);
     h1 {
-      font-size: 5.5rem;
+      font-size: 6rem;
       color: $brand-white;
     }
     h3 {
@@ -72,7 +72,7 @@
   @include responsive(991px) {
     .text {
       h1 {
-        font-size: 5rem;
+        font-size: 5.5rem;
       }
       h3 {
         font-size: 1.4rem;
@@ -92,21 +92,21 @@
   @include responsive(767px) {
     .text {
       h1 {
-        font-size: 4.5rem;
+        font-size: 5rem;
       }
     }
   }
   @include responsive(600px) {
     .text {
       h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
       }
     }
   }
   @include responsive(480px) {
     .text {
       h1 {
-        font-size: 3.2rem;
+        font-size: 3.5rem;
       }
       h3 {
         font-size: 1.2rem;
@@ -316,7 +316,7 @@
       row-gap: 2rem;
       .obj-div {
         @include flex(column, initial, flex-start);
-        height: fit-content;
+        height: auto;
         background-color: #ffffff;
         border: 1px solid #d4dce3;
         border-radius: 0.7rem;

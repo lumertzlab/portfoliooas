@@ -8,6 +8,10 @@
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
+  &::selection {
+    background: #bb243e;
+    color: #fff;
+  }
 }
 
 body {
