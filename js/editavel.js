@@ -1,50 +1,51 @@
 const input = {
-  video_hero: "img/video-hero.mp4",
+  video_hero: "video-hero.mp4",
   tag_hero: "PORTFÓLIO",
   titulo_hero: "Objetos de<br>Aprendizagem",
   // texto_hero:
   //   "Lorem ipsum dolor sit amet. Ea illum consequuntur est itaque galisum est accusamus facere rem optio voluptatem.",
   titulo_sec_objeto: "EXPERIÊNCIAS IMERSIVAS",
   texto_sec_objeto:
-    "Confira a nossa coleção de objetos e recursos imersivos que enriquecem o processo de ensino e aprendizado. Essas experiências são projetadas para envolver os alunos de forma profunda e significativa, utilizando diferentes tipos de tecnologias e formatos para criar um ambiente educativo mais interativo e envolvente.",
+    "Coleção de objetos e recursos imersivos que enriquecem o processo de ensino e aprendizado. Essas experiências são projetadas para envolver o aluno de forma profunda e significativa, utilizando diferentes tipos de tecnologias e formatos para criar um ambiente educativo mais interativo e envolvente.",
 
   objeto: [
     {
-      img_objeto: "../img/banner-h5p.png",
+      img_objeto: "banner-h5p.png",
       titulo_objeto: "Interativos H5P",
       texto_objeto:
-        "Conteúdos H5P que proporcionam um aprendizado dinâmico e envolvente através de atividades interativas.",
+        "Conteúdos H5P que proporcionam um aprendizado atrativo e imersivo através de atividades interativas.",
       link_objeto: "interativosh5p",
     },
     {
-      img_objeto: "../img/banner-html.png",
+      img_objeto: "banner-html.png",
       titulo_objeto: "Interativos HTML",
       texto_objeto:
         "Conteúdos interativos em HTML, que oferecem uma experiência visual e prática para um aprendizado envolvente.",
+      link_objeto: "interativoshtml",
     },
     {
-      img_objeto: "../img/banner-3D.png",
+      img_objeto: "banner-3D.png",
       titulo_objeto: "Objetos 3D",
       texto_objeto:
         "Modelos 3D educacionais que oferecem uma imersão visual e uma experiência de aprendizado inovadora.",
       link_objeto: "objetos3d",
     },
     {
-      img_objeto: "../img/banner-podcast.png",
+      img_objeto: "banner-podcast.png",
       titulo_objeto: "<i>Podcasts</i>",
       texto_objeto:
         "Podcasts com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
       link_objeto: "podcast",
     },
     {
-      img_objeto: "../img/banner-videos.png",
+      img_objeto: "banner-videos.png",
       titulo_objeto: "Vídeos",
       texto_objeto:
-        "Alguns exemplos dos principais formatos audiovisuais disponíveis em nosso catálogo.",
+        "Conteúdos audiovisuais em diversos formatos para aprofundar e enriquecer o estudo de temas específicos.",
       link_objeto: "videos",
     },
     {
-      img_objeto: "../img/banner_videos-imersivos.png",
+      img_objeto: "banner_videos-imersivos.png",
       titulo_objeto: "Vídeos Imersivos",
       texto_objeto:
         "Vídeos que envolvem o estudante de maneira profunda, utilizando a tecnologia para criar uma sensação imersiva no conteúdo.",
@@ -54,10 +55,10 @@ const input = {
 };
 
 const interativosh5p = {
-  img_hero: "",
+  img_hero: "banner-h5p-2.png",
   titulo_hero: "Interativos H5P",
   texto_hero:
-    "Conteúdos H5P que proporcionam um aprendizado dinâmico e envolvente através de atividades interativas.",
+    "Conteúdos H5P que proporcionam um aprendizado atrativo e imersivo através de atividades interativas.",
   general_menu: [
     {
       link_objeto: "",
@@ -103,14 +104,13 @@ const interativosh5p = {
       id: "sub01",
       objeto: "Interativos H5P",
       texto_objeto:
-        "Peça gráfica desenvolvida com H5P que permite interação direta com o conteúdo através de atividades integradas. Os alunos podem explorar e interagir com diversos elementos, proporcionando uma compreensão mais profunda e envolvente do material.",
-      video_samba: [
+        "Peça gráfica desenvolvida com H5P, que permite interação direta com o conteúdo através de atividades integradas. O aluno pode explorar e interagir com diversos elementos, proporcionando uma compreensão mais profunda do material.",
+      h5p: [
         {
           titulo_objeto: "Gestão de Conflitos",
           area: "Sociais aplicadas",
-          ua: "",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/702b62a579ffe0ab1132b2e387769278",
+          ua: ": Games",
+          link_h5p: "https://imersys.h5p.com/content/1292110830747511787/embed",
         },
       ],
     },
@@ -118,35 +118,31 @@ const interativosh5p = {
       id: "sub02",
       objeto: "Drag and Drop",
       texto_objeto:
-        "Peça gráfica desenvolvida com H5P que utiliza a funcionalidade de arrastar e soltar. Esta abordagem permite que os alunos movam itens para posições específicas, ajudando a entender e organizar conceitos de maneira prática e interativa.",
-      video_samba: [
+        "Atividades desenvolvidas com o uso de H5P que utilizam a funcionalidade de arrastar e soltar. Essa abordagem permite ao aluno mover itens para posições específicas, facilitando a compreensão e a organização dos conceitos de maneira prática e interativa.",
+      h5p: [
         {
           titulo_objeto: "A responsabilidade moral",
           area: "Educação",
           ua: "15112",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_h5p: "https://imersys.h5p.com/content/1291565704146164527/embed",
         },
         {
           titulo_objeto: "Gestão de Projetos",
           area: "Exatas",
           ua: "2906",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_h5p: "https://imersys.h5p.com/content/1291741907095473537/embed",
         },
         {
           titulo_objeto: "Pré-molares superiores",
           area: "Saúde",
           ua: "50211",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_h5p: "https://imersys.h5p.com/content/1291806098239349887/embed",
         },
         {
           titulo_objeto: "Modos de transporte e suas características",
           area: "Sociais aplicadas",
           ua: "24764",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_h5p: "https://imersys.h5p.com/content/1291538711261996687/embed",
         },
       ],
     },
@@ -154,28 +150,165 @@ const interativosh5p = {
       id: "sub03",
       objeto: "Livro H5P",
       texto_objeto:
-        "Peça gráfica desenvolvida com H5P que utiliza a funcionalidade de livro interativo. Esta abordagem permite que os alunos explorem uma variedade de conteúdos, como textos, imagens e vídeos, de forma interativa. Com a navegação por capítulos e a integração de atividades, promove um aprendizado mais envolvente e exploratório.",
-      video_samba: [
+        "Os livros interativos são peças gráficas desenvolvidas com o uso do H5P. Esse formato permite ao aluno explorar uma variedade de conteúdos, como textos, imagens e vídeos, de forma interativa. A navegação por capítulos e a integração de atividades promovem um aprendizado mais imersivo e exploratório.",
+      h5p: [
         {
           titulo_objeto: "Arte e Produção",
           area: "Educação",
           ua: ": Games",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/62b64721144bc6d347d601d6366ce9dd",
+          link_h5p: "https://imersys.h5p.com/content/1292052737415522287/embed",
         },
         {
           titulo_objeto: "Vida e evolução",
           area: "Saúde",
           ua: ": Games",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/e671d231bdf3ae3318bab8a9390bad7f",
+          link_h5p: "https://imersys.h5p.com/content/1292038276566145127/embed",
         },
         {
           titulo_objeto: "Planejamento financeiro",
           area: "Sociais aplicadas",
           ua: ": Games",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/e7a1dd209264175d090b29e1eba07d0e",
+          link_h5p: "https://imersys.h5p.com/content/1292090944664181917/embed",
+        },
+      ],
+    },
+  ],
+};
+
+const interativohtml = {
+  img_hero: "banner-html-2.png",
+  titulo_hero: "Interativos HTML",
+  texto_hero:
+    "Conteúdos interativos em HTML, que oferecem uma experiência visual e prática para um aprendizado envolvente.",
+  general_menu: [
+    {
+      link_objeto: "",
+      objeto: "Interativos H5P",
+    },
+    {
+      link_objeto: "",
+      objeto: "Interativos HTML",
+    },
+    {
+      link_objeto: "",
+      objeto: "Objetos 3D",
+    },
+    {
+      link_objeto: "",
+      objeto: "<i>Podcasts</i>",
+    },
+    {
+      link_objeto: "videos",
+      objeto: "Vídeos",
+    },
+    {
+      link_objeto: "",
+      objeto: "Vídeos Imersivos",
+    },
+  ],
+  item_menu: [
+    {
+      id: "sub01",
+      objeto: "Interativo Canvas",
+    },
+    {
+      id: "sub02",
+      objeto: "Linha do Tempo",
+    },
+    {
+      id: "sub03",
+      objeto: "Antes e Depois",
+    },
+    {
+      id: "sub04",
+      objeto: "Slider",
+    },
+  ],
+  item: [
+    {
+      id: "sub01",
+      objeto: "Interativo Canvas",
+      texto_objeto:
+        "Canvas interativo em HTML, este recurso permite a criação de ambientes visuais dinâmicos onde o aluno pode interagir com elementos gráficos e dados. Essa ferramenta facilita a exploração de conceitos complexos de maneira visual e prática.",
+      interativo_html: [
+        {
+          titulo_objeto: "Histórico da legislação educacional brasileira",
+          area: "Educação",
+          ua: "18220",
+          interativo: "int-canvas-18220",
+        },
+        {
+          titulo_objeto: "Leis de Newton e suas aplicações",
+          area: "Exatas",
+          ua: "50598",
+          interativo: "int-canvas-50598",
+        },
+        {
+          titulo_objeto: "Sistema Endócrino",
+          area: "Saúde",
+          ua: "1051",
+          interativo: "int-canvas-1051",
+        },
+      ],
+    },
+    {
+      id: "sub02",
+      objeto: "Linha do Tempo",
+      texto_objeto:
+        "A linha do tempo interativa em HTML possibilita a visualização de eventos e processos ao longo de um período específico. Com esse recurso, o aluno pode explorar cronologias de maneira visual e interativa, clicando em pontos específicos para obter informações detalhadas.",
+      interativo_html: [
+        {
+          titulo_objeto: "Volta ao mundo: Catar",
+          area: "Educação",
+          ua: ": Atualidades",
+          interativo: "ex-mvp-jogo",
+        },
+      ],
+    },
+    {
+      id: "sub03",
+      objeto: "Antes e Depois",
+      texto_objeto:
+        "Peça gráfica desenvolvida em HTML que utiliza uma ferramenta de comparação visual. Esta ferramenta permite a exibição de imagens divididas em duas partes, que podem ser arrastadas para revelar ou ocultar diferentes aspectos.",
+      interativo_html: [
+        {
+          titulo_objeto: "Mindset",
+          area: "Sociais Aplicadas",
+          ua: "27704",
+          interativo: "int-linha-tempo-27704",
+        },
+      ],
+    },
+    {
+      id: "sub04",
+      objeto: "Slider",
+      texto_objeto:
+        "Apresentação desenvolvida em HTML que permite ao aluno navegar por uma sequência de slides de forma interativa, avançando ou retornando entre diferentes telas de conteúdo. Cada slide pode incluir texto, imagens, gráficos ou outros elementos visuais, proporcionando uma forma estruturada e sequencial de explorar informações.",
+      interativo_html: [
+        {
+          titulo_objeto: "Formação da língua latina",
+          area: "Educação",
+          ua: "59834",
+          interativo: "int-slider-59834",
+        },
+        {
+          titulo_objeto:
+            "Cálculos para a unidade de Flash de uma máquina fotográfica",
+          area: "Exatas",
+          ua: "17792",
+          interativo: "int-slider-17792",
+        },
+        {
+          titulo_objeto: "Saúde bucal",
+          area: "Saúde",
+          ua: "58314",
+          interativo: "int-slider-58314",
+        },
+        {
+          titulo_objeto: "Algoritmos genéticos",
+          area: "TI",
+          ua: "20620",
+          interativo: "ex-mvp-jogo",
         },
       ],
     },
@@ -183,7 +316,7 @@ const interativosh5p = {
 };
 
 const objetos3d = {
-  img_hero: "",
+  img_hero: "banner-3D-2.png",
   titulo_hero: "Objetos 3D",
   texto_hero:
     "Modelos 3D educacionais que oferecem uma imersão visual e uma experiência de aprendizado inovadora.",
@@ -229,34 +362,34 @@ const objetos3d = {
       objeto: "Objetos 3D",
       texto_objeto:
         "Modelos 3D que oferecem uma experiência imersiva. Esses objetos permitem a exploração de modelos tridimensionais educativos, facilitando a visualização e a compreensão de conceitos complexos. Essa abordagem proporciona uma imersão prática e envolvente, promovendo um aprendizado mais eficaz e detalhado.",
-      video_samba: [
+      objeto3d: [
         {
           titulo_objeto: "Sinal de porque em pergunta",
           area: "Educação",
           ua: "22607",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/702b62a579ffe0ab1132b2e387769278",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/FbqFt0kQTieAq-oscV6P2w",
         },
         {
           titulo_objeto: "Elevador",
           area: "Exatas",
           ua: "17701",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/702b62a579ffe0ab1132b2e387769278",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/AkUwmqZ-QYGXx27PH2Xwig",
         },
         {
           titulo_objeto: "Sistema Auditivo",
           area: "Saúde",
           ua: "15268",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/702b62a579ffe0ab1132b2e387769278",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/JidHkNAeRKWvNJ6vA-cxNg",
         },
         {
           titulo_objeto: "Carrossel vertical",
           area: "Sociais Aplicadas",
           ua: "15268",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/702b62a579ffe0ab1132b2e387769278",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/Pp-xp91zTMSjHZtHcZ91aw",
         },
       ],
     },
@@ -265,34 +398,34 @@ const objetos3d = {
       objeto: "PO3D",
       texto_objeto:
         "Combinação de objetos 3D, estáticos ou animados, com camadas de informação organizadas em capítulos, diretamente alinhadas ao objetivo educacional. Esses objetos tridimensionais permitem a visualização e a compreensão de conceitos complexos de forma estruturada, complementando o aprendizado e aprofundando o entendimento dos temas abordados.",
-      video_samba: [
+      objeto3d: [
         {
           titulo_objeto: "Ciclos biogeoquímico",
           area: "Educação",
           ua: "15112",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/FbiGuwalQkSzM2AeUi8UZg",
         },
         {
           titulo_objeto: "Sistemas estruturais",
           area: "Exatas",
           ua: "32343",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/M2RUI8uRSK-WjGrdB12lAg",
         },
         {
           titulo_objeto: "Alterações do sistema respiratório",
           area: "Saúde",
           ua: "21170",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/IfxOAvAJQi2DuHmMjzV7NQ",
         },
         {
           titulo_objeto: "Modais de transportes",
           area: "Sociais aplicadas",
           ua: "28596",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_3d:
+            "https://grupoa-edtech.grupoa.education/object/RQU1l5FzRVWbkh-o4fU1sw",
         },
       ],
     },
@@ -300,7 +433,7 @@ const objetos3d = {
 };
 
 const podcast = {
-  img_hero: "",
+  img_hero: "banner-podcast-2.png",
   titulo_hero: "Podcast",
   texto_hero:
     "Podcasts com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
@@ -341,7 +474,7 @@ const podcast = {
       id: "sub01",
       objeto: "Podcast",
       texto_objeto:
-        "Podcast com discussões de especialistas sobre temas práticos do dia a dia em diversas áreas do conhecimento. Os episódios conectam a teoria com a prática, facilitando a compreensão de conceitos complexos e promovendo um aprendizado dinâmico e envolvente.",
+        "Discussões de especialistas sobre temas práticos do dia a dia em diversas áreas do conhecimento. Esses episódios conectam a teoria com a prática, facilitando a compreensão de conceitos complexos e promovendo um aprendizado mais dinâmico.",
       video_samba: [
         {
           titulo_objeto:
@@ -349,73 +482,28 @@ const podcast = {
           area: "Educação",
           ua: "22773",
           link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/702b62a579ffe0ab1132b2e387769278",
+            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/d900ff76454d7c8bb26e33f0aac79641",
         },
         {
           titulo_objeto: "Estatística no cotidiano",
           area: "Exatas",
           ua: "2240",
           link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/db36a98bd42602f622e6f3dafc4e9320",
+            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/a28b041e59543198b1f1b25f3d657759",
         },
         {
           titulo_objeto: "Saúde do psicólogo no ambiente de trabalho",
           area: "Saúde",
           ua: "1256",
           link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/39d1b762d9ea2b93440a39a891b09b4b",
+            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/8b026a83a6cde082385732a6a700a99b",
         },
         {
           titulo_objeto: "Direitos humanos: História e sociedade",
           area: "Sociais aplicadas",
           ua: "18788",
           link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/5cab80ea55550628ab4c9d5ee911fc83",
-        },
-      ],
-    },
-    {
-      id: "sub02",
-      objeto: "Vídeoaula Simulação",
-      texto_objeto:
-        "Recria cenários de forma realista, permitindo que o estudante visualize situações do conteúdo de suas aulas.",
-      video_samba: [
-        {
-          titulo_objeto: "Entrevista inicial de Psicodiagnóstico",
-          area: "Saúde",
-          ua: "53227",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
-        },
-      ],
-    },
-    {
-      id: "sub03",
-      objeto: "Vídeo Entrevista",
-      texto_objeto:
-        "Gravação na qual um profissional compartilha suas perspectivas, experiências ou conhecimentos.",
-      video_samba: [
-        {
-          titulo_objeto:
-            "Práticas adaptadas para a inclusão na Educação Física",
-          area: "Educação",
-          ua: "18207",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/62b64721144bc6d347d601d6366ce9dd",
-        },
-        {
-          titulo_objeto: "Fatores humanos e Ergonomia",
-          area: "Exatas",
-          ua: "27049",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/e671d231bdf3ae3318bab8a9390bad7f",
-        },
-        {
-          titulo_objeto: "Direitos autorais",
-          area: "Sociais aplicadas",
-          ua: "14491",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/e7a1dd209264175d090b29e1eba07d0e",
+            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/d599db0ffb93edda2e8aa3ebdd3f49ff",
         },
       ],
     },
@@ -426,7 +514,7 @@ const videos = {
   img_hero: "banner-videos-2.png",
   titulo_hero: "Vídeos",
   texto_hero:
-    "Alguns exemplos dos principais formatos audiovisuais disponíveis em nosso catálogo.",
+    "Conteúdos audiovisuais em diversos formatos para aprofundar e enriquecer o estudo de temas específicos.",
   general_menu: [
     {
       link_objeto: "",
@@ -472,7 +560,7 @@ const videos = {
       id: "sub01",
       objeto: "Videoaula Expositiva",
       texto_objeto:
-        "Aulas em formato de vídeo que utilizam recursos visuais e auditivos, proporcionando uma experiência de aprendizado mais rica e envolvente.",
+        "Aulas em formato de vídeo que utilizam recursos visuais e auditivos que proporcionam uma experiência de aprendizado mais rica e envolvente. Estas aulas permitem que o aluno visualize situações relacionadas ao conteúdo, tornando o aprendizado mais próximo da realidade.",
       video_samba: [
         {
           titulo_objeto: "A leitura para crianças de 0 a 3 anos",
@@ -508,7 +596,7 @@ const videos = {
       id: "sub02",
       objeto: "Vídeoaula Simulação",
       texto_objeto:
-        "Recriação realista de cenários que permite aos estudantes visualizar situações relacionadas ao conteúdo de suas aulas, tornando o aprendizado mais dinâmico e próximo da realidade. Essa abordagem facilita a compreensão de conceitos ao trazer o conteúdo para um contexto prático e visual.",
+        "Recriação realista de cenários que permite aos estudantes visualizar situações relacionadas ao conteúdo de suas aulas, tornando o aprendizado mais próximo da realidade. Essa abordagem facilita a compreensão de conceitos ao trazer o conteúdo para um contexto prático e visual.",
       video_samba: [
         {
           titulo_objeto: "Entrevista inicial de Psicodiagnóstico",
@@ -523,7 +611,7 @@ const videos = {
       id: "sub03",
       objeto: "Vídeo Entrevista",
       texto_objeto:
-        "Gravação na qual um especialista compartilha suas perspectivas, experiências e conhecimentos sobre um tema específico. Essas gravações proporcionam insights valiosos e aprofundam a compreensão do assunto, enriquecendo o aprendizado com a experiência prática e o expertise do profissional.",
+        "Gravação na qual um especialista compartilha suas perspectivas, experiências e conhecimentos sobre um tema específico em uma conversa com outro profissional da área.",
       video_samba: [
         {
           titulo_objeto:
@@ -553,7 +641,7 @@ const videos = {
 };
 
 const imersivos = {
-  img_hero: "",
+  img_hero: "banner_videos-imersivos-2.png",
   titulo_hero: "Vídeos Imersivos",
   texto_hero:
     "Vídeos que envolvem o estudante de maneira profunda, utilizando a tecnologia para criar uma sensação imersiva no conteúdo.",
@@ -598,35 +686,31 @@ const imersivos = {
       id: "sub01",
       objeto: "Vídeos Interativos",
       texto_objeto:
-        "Permite que o estudante participe ativamente do conteúdo por meio da ferramenta H5P, tomando decisões que influenciam o desenrolar do vídeo. Essa abordagem promove uma experiência de aprendizado mais dinâmica e envolvente, incentivando a participação ativa e o aprofundamento dos tópicos abordados.",
-      video_samba: [
+        "Permite que o estudante participe ativamente do conteúdo por meio da ferramenta H5P, tomando decisões que influenciam o desenrolar do vídeo. Esta ferramenta promove uma experiência de aprendizado mais dinâmica incentivando a participação ativa e o aprofundamento dos tópicos abordados.",
+      h5p: [
         {
           titulo_objeto: "Assembleias escolares",
           area: "Educação",
           ua: "17122",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/702b62a579ffe0ab1132b2e387769278",
+          link_h5p: "https://imersys.h5p.com/content/1292349300253181977/embed",
         },
         {
           titulo_objeto: "Regra de três simples e composta",
           area: "Exatas",
           ua: "9748",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/db36a98bd42602f622e6f3dafc4e9320",
+          link_h5p: "https://imersys.h5p.com/content/1292143630797739877/embed",
         },
         {
           titulo_objeto: "Câncer de cólon e Colostomia",
           area: "Saúde",
           ua: "18883",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/39d1b762d9ea2b93440a39a891b09b4b",
+          link_h5p: "https://imersys.h5p.com/content/1292089954686145507/embed",
         },
         {
           titulo_objeto: "Escalada na montanha e o Ciclo de vida do projeto",
           area: "Sociais aplicadas",
           ua: "58333",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/5cab80ea55550628ab4c9d5ee911fc83",
+          link_h5p: "https://imersys.h5p.com/content/1292320854394387207/embed",
         },
       ],
     },
@@ -635,34 +719,30 @@ const imersivos = {
       objeto: "Vídeos 360º",
       texto_objeto:
         "Os vídeos 360° permitem que o estudante explore o ambiente ao redor ao mover a perspectiva do vídeo. Essa tecnologia oferece uma experiência imersiva, permitindo uma visualização completa e interativa do cenário, o que enriquece a compreensão e o engajamento com o conteúdo abordado.",
-      video_samba: [
+      imersivo: [
         {
           titulo_objeto: "Museu do Holocausto",
           area: "Educação",
           ua: "44508",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_imersivo: "https://player.imersys.com/video/832398323",
         },
         {
           titulo_objeto: "Distribuições contínuas de probabilidade",
           area: "Exatas",
           ua: "2245",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_imersivo: "https://player.imersys.com/video/855211645",
         },
         {
           titulo_objeto: "Tomografia Computadorizada",
           area: "Saúde",
           ua: "25059",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_imersivo: "https://player.imersys.com/video/883393683",
         },
         {
           titulo_objeto: "Regra de pareto",
           area: "Sociais aplicadas",
           ua: "18397",
-          link_objeto:
-            "https://fast.player.liquidplatform.com/pApiv2/embed/cee29914fad5b594d8f5918df1e801fd/7a0665af24583315ac0d3488a93d2a73",
+          link_imersivo: "https://player.imersys.com/video/855211645",
         },
       ],
     },

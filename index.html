@@ -41,7 +41,7 @@
     <script id="input" type="text/x-handlebars-template">
         <section class="s-hero">
             <video autoplay muted loop>
-                <source src="{{{video_hero}}}" type="video/mp4">
+                <source src="img/{{{video_hero}}}" type="video/mp4">
             </video>
             <div class="container">
                 <div class="text" data-aos="fade-right">
@@ -62,17 +62,14 @@
                 <div class="sec-content">
                     {{#each objeto}}
                     <div class="obj-div">
-                        <div class="img-bg" style="background-image: url('{{{img_objeto}}}');"></div>
+                        <div class="img-bg" style="background-image: url('../img/{{{img_objeto}}}');"></div>
                         <div class="cont-div">
                             <div class="infos">
                                 <h2>{{{titulo_objeto}}}</h2>
                                 <p>{{{texto_objeto}}}</p>
                             </div>
                             <a class="card-btn" href="./objetos/{{{link_objeto}}}.html">
-                                ACESSAR OBJETO
-                                <div class="btn__hover">
-                                    <span class="btn__hover-title">Acessar</span>
-                                </div>
+                                ACESSAR
                             </a>
                         </div>
                     </div>

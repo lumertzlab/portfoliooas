@@ -353,7 +353,7 @@
         .cont-div {
           @include flex(column, flex-start, space-between);
           padding: 3rem;
-          height: calc(100% - 150px);
+          height: calc(100% - 15rem);
         }
         .infos {
           width: 100%;
@@ -398,37 +398,17 @@
           line-height: 5rem;
 
           background-color: #d4dce385;
+          border: 2px solid #d4dce385;
           color: #3d3c3c;
           display: block;
           position: relative;
           overflow: hidden;
           font-weight: 600;
 
-          .btn__hover {
-            background: #bb243ef7;
-            color: $brand-white;
-            height: 100%;
-            left: 0;
-            margin-left: -100%;
-            position: absolute;
-            top: 0;
-            transition: 0.7s ease-out;
-            width: 100%;
-            border-radius: 1.2rem;
-            .btn__hover-title {
-              width: 100%;
-              margin-top: -10px;
-              left: 0;
-              top: 50%;
-              line-height: normal;
-              position: absolute;
-              text-align: center;
-            }
-          }
+          transition: all 0.5s ease;
           &:hover {
-            .btn__hover {
-              margin-left: 0;
-            }
+            background-color: $brand-white;
+            border: 2px solid $brand-red;
           }
         }
       }
