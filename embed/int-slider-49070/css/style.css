@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	margin:0;
+	border:0;
+	background:#ffffff;
+	height: 100%;
+}
+.ctn-content{
+	margin: 0 auto;
+    position: relative;
+	border:solid 1px #cccccc;
+}
+.ctn-nav, .ctn-layer1{
+	left:0;
+	top:0;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    list-style: none;
+}
+.ctn-nav{
+	z-index:11;
+}
+
+.ctn-layer1{
+	z-index:6;
+	background-position:0 0;
+}
+
+#nav{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    visibility: hidden;
+}
+#nav a{
+	color: #777;
+	text-decoration: none;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.activeSlide{
+	font-weight: bold;
+	color:#333 !important;
+}
+.btn-prev, .btn-next{
+	width:10%;
+	height:10%;
+	min-width: 30px;
+	min-height: 30px;
+	display:block;
+	overflow:hidden;
+	position: absolute;
+    left: calc(50% - 5%);
+	text-indent:-9999px;
+}
+.btn-prev{	
+	top:5px;
+	background-image: url("btn_prev.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-next{
+	bottom:5px;
+	background-image: url("btn_next.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-prev:hover{	
+	opacity: .7;
+	cursor:pointer;
+}
+.btn-next:hover{
+	opacity: .7;
+	cursor:pointer;
+}
+
+.btn-prev.disable{	
+	cursor:default;
+	opacity:0;
+}
+.btn-next.disable{
+	cursor:default;
+	opacity:0;
+}

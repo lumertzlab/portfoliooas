@@ -1,37 +1,41 @@
-<!DOCTYPE html><html><head>
-<meta charset="utf-8">
-<title></title>
-<meta name="viewport" content="width=device-width, user-scalable=yes">
-<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
-<!--<script type="text/javascript" src="js/jquery.cycle2.scrollVert.min.js"></script>-->
-<script src="js/js.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<meta name="version" content="1.1">
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.cycle2.scrollVert.min.js"></script>-->
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name='version' content='1.1'>
 </head>
 
 <body onload="changeSize()">
-<section class="ctn-content">
-	<div class="ctn-nav">
-    	<a class="btn-prev" id="prev">voltar</a>
-        <a class="btn-next" id="next">avançar</a>
-    </div>
-    <div class="cycle-slideshow ctn-layer1" data-cycle-fx="fade" data-cycle-speed="900" data-cycle-timeout="0" data-allow-wrap="false" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-pager="#nav" data-cycle-pager-template="<strong><a href=#> {{slideNum}} </a></strong>">
-    	<img src="images/01.jpg" width="100%" height="auto">
-    	<img src="images/02.jpg" width="100%" height="auto">
-    	<img src="images/03.jpg" width="100%" height="auto">
-        <img src="images/04.jpg" width="100%" height="auto">
-        <img src="images/05.jpg" width="100%" height="auto">
-        <img src="images/06.jpg" width="100%" height="auto">
-    	<img src="images/07.jpg" width="100%" height="auto">
-    	<img src="images/08.jpg" width="100%" height="auto">
-        <img src="images/09.jpg" width="100%" height="auto">
-        <img src="images/10.jpg" width="100%" height="auto">
-        <img src="images/11.jpg" width="100%" height="auto">
-        
-    </div>
-    <div id="nav"></div>
-</section>
+    <section class="ctn-content">
+        <div class="ctn-nav">
+            <a class="btn-prev" id="prev">voltar</a>
+            <a class="btn-next" id="next">avançar</a>
+        </div>
+        <div class="cycle-slideshow ctn-layer1" data-cycle-fx="scrollVert" data-cycle-speed="900" data-cycle-timeout="0" data-allow-wrap="false" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-pager="#nav" data-cycle-pager-template="<strong><a href=#> {{slideNum}} </a></strong>">
 
+            <img src="imagens/01.jpg" width="100%" height="auto">
+            <img src="imagens/02.jpg" width="100%" height="auto">
+            <img src="imagens/03.jpg" width="100%" height="auto">
+            <img src="imagens/04.jpg" width="100%" height="auto">
+            <img src="imagens/05.jpg" width="100%" height="auto">
+            <img src="imagens/06.jpg" width="100%" height="auto">
+            <img src="imagens/07.jpg" width="100%" height="auto">
+            <img src="imagens/08.jpg" width="100%" height="auto">
+            <img src="imagens/09.jpg" width="100%" height="auto">
+            <img src="imagens/10.jpg" width="100%" height="auto">
+            <img src="imagens/11.jpg" width="100%" height="auto">
 
-</body></html>
+        </div>
+        <div id="nav"></div>
+    </section>
+</body>
+
+</html>

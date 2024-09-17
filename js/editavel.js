@@ -2,8 +2,6 @@ const input = {
   video_hero: "video-hero.mp4",
   tag_hero: "PORTFÓLIO",
   titulo_hero: "Objetos de<br>Aprendizagem",
-  // texto_hero:
-  //   "Lorem ipsum dolor sit amet. Ea illum consequuntur est itaque galisum est accusamus facere rem optio voluptatem.",
   titulo_sec_objeto: "EXPERIÊNCIAS IMERSIVAS",
   texto_sec_objeto:
     "Coleção de objetos e recursos imersivos que enriquecem o processo de ensino e aprendizado. Essas experiências são projetadas para envolver o aluno de forma profunda e significativa, utilizando diferentes tipos de tecnologias e formatos para criar um ambiente educativo mais interativo e envolvente.",
@@ -32,7 +30,7 @@ const input = {
     },
     {
       img_objeto: "banner-podcast.png",
-      titulo_objeto: "<i>Podcasts</i>",
+      titulo_objeto: "<i>Podcast</i>",
       texto_objeto:
         "Podcasts com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
       link_objeto: "podcast",
@@ -61,27 +59,27 @@ const interativosh5p = {
     "Conteúdos H5P que proporcionam um aprendizado atrativo e imersivo através de atividades interativas.",
   general_menu: [
     {
-      link_objeto: "",
+      link_objeto: "interativosh5p",
       objeto: "Interativos H5P",
     },
     {
-      link_objeto: "",
+      link_objeto: "interativoshtml",
       objeto: "Interativos HTML",
     },
     {
-      link_objeto: "",
+      link_objeto: "objetos3d",
       objeto: "Objetos 3D",
     },
     {
-      link_objeto: "",
-      objeto: "<i>Podcasts</i>",
+      link_objeto: "podcast",
+      objeto: "<i>Podcast</i>",
     },
     {
       link_objeto: "videos",
       objeto: "Vídeos",
     },
     {
-      link_objeto: "",
+      link_objeto: "imersivos",
       objeto: "Vídeos Imersivos",
     },
   ],
@@ -182,27 +180,27 @@ const interativohtml = {
     "Conteúdos interativos em HTML, que oferecem uma experiência visual e prática para um aprendizado envolvente.",
   general_menu: [
     {
-      link_objeto: "",
+      link_objeto: "interativosh5p",
       objeto: "Interativos H5P",
     },
     {
-      link_objeto: "",
+      link_objeto: "interativoshtml",
       objeto: "Interativos HTML",
     },
     {
-      link_objeto: "",
+      link_objeto: "objetos3d",
       objeto: "Objetos 3D",
     },
     {
-      link_objeto: "",
-      objeto: "<i>Podcasts</i>",
+      link_objeto: "podcast",
+      objeto: "<i>Podcast</i>",
     },
     {
       link_objeto: "videos",
       objeto: "Vídeos",
     },
     {
-      link_objeto: "",
+      link_objeto: "imersivos",
       objeto: "Vídeos Imersivos",
     },
   ],
@@ -258,10 +256,10 @@ const interativohtml = {
         "A linha do tempo interativa em HTML possibilita a visualização de eventos e processos ao longo de um período específico. Com esse recurso, o aluno pode explorar cronologias de maneira visual e interativa, clicando em pontos específicos para obter informações detalhadas.",
       interativo_html: [
         {
-          titulo_objeto: "Volta ao mundo: Catar",
+          titulo_objeto: "Censo Demográfico",
           area: "Educação",
           ua: ": Atualidades",
-          interativo: "ex-mvp-jogo",
+          interativo: "int-linha-tempo-atualidades",
         },
       ],
     },
@@ -275,7 +273,7 @@ const interativohtml = {
           titulo_objeto: "Mindset",
           area: "Sociais Aplicadas",
           ua: "27704",
-          interativo: "int-linha-tempo-27704",
+          interativo: "int-antes-depois-27704",
         },
       ],
     },
@@ -305,10 +303,10 @@ const interativohtml = {
           interativo: "int-slider-58314",
         },
         {
-          titulo_objeto: "Algoritmos genéticos",
+          titulo_objeto: "Vinculação de sites",
           area: "TI",
-          ua: "20620",
-          interativo: "ex-mvp-jogo",
+          ua: "49070",
+          interativo: "int-slider-49070",
         },
       ],
     },
@@ -322,27 +320,27 @@ const objetos3d = {
     "Modelos 3D educacionais que oferecem uma imersão visual e uma experiência de aprendizado inovadora.",
   general_menu: [
     {
-      link_objeto: "",
+      link_objeto: "interativosh5p",
       objeto: "Interativos H5P",
     },
     {
-      link_objeto: "",
+      link_objeto: "interativoshtml",
       objeto: "Interativos HTML",
     },
     {
-      link_objeto: "",
+      link_objeto: "objetos3d",
       objeto: "Objetos 3D",
     },
     {
-      link_objeto: "",
-      objeto: "<i>Podcasts</i>",
+      link_objeto: "podcast",
+      objeto: "<i>Podcast</i>",
     },
     {
       link_objeto: "videos",
       objeto: "Vídeos",
     },
     {
-      link_objeto: "",
+      link_objeto: "imersivos",
       objeto: "Vídeos Imersivos",
     },
   ],
@@ -387,7 +385,7 @@ const objetos3d = {
         {
           titulo_objeto: "Carrossel vertical",
           area: "Sociais Aplicadas",
-          ua: "15268",
+          ua: "",
           link_3d:
             "https://grupoa-edtech.grupoa.education/object/Pp-xp91zTMSjHZtHcZ91aw",
         },
@@ -400,9 +398,9 @@ const objetos3d = {
         "Combinação de objetos 3D, estáticos ou animados, com camadas de informação organizadas em capítulos, diretamente alinhadas ao objetivo educacional. Esses objetos tridimensionais permitem a visualização e a compreensão de conceitos complexos de forma estruturada, complementando o aprendizado e aprofundando o entendimento dos temas abordados.",
       objeto3d: [
         {
-          titulo_objeto: "Ciclos biogeoquímico",
+          titulo_objeto: "Ciclos biogeoquímicos",
           area: "Educação",
-          ua: "15112",
+          ua: "",
           link_3d:
             "https://grupoa-edtech.grupoa.education/object/FbiGuwalQkSzM2AeUi8UZg",
         },
@@ -434,45 +432,45 @@ const objetos3d = {
 
 const podcast = {
   img_hero: "banner-podcast-2.png",
-  titulo_hero: "Podcast",
+  titulo_hero: "<i>Podcast</i>",
   texto_hero:
     "Podcasts com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
   general_menu: [
     {
-      link_objeto: "",
+      link_objeto: "interativosh5p",
       objeto: "Interativos H5P",
     },
     {
-      link_objeto: "",
+      link_objeto: "interativoshtml",
       objeto: "Interativos HTML",
     },
     {
-      link_objeto: "",
+      link_objeto: "objetos3d",
       objeto: "Objetos 3D",
     },
     {
-      link_objeto: "",
-      objeto: "<i>Podcasts</i>",
+      link_objeto: "podcast",
+      objeto: "<i>Podcast</i>",
     },
     {
       link_objeto: "videos",
       objeto: "Vídeos",
     },
     {
-      link_objeto: "",
+      link_objeto: "imersivos",
       objeto: "Vídeos Imersivos",
     },
   ],
   item_menu: [
     {
       id: "sub01",
-      objeto: "Podcast",
+      objeto: "<i>Podcast</i>",
     },
   ],
   item: [
     {
       id: "sub01",
-      objeto: "Podcast",
+      objeto: "<i>Podcast</i>",
       texto_objeto:
         "Discussões de especialistas sobre temas práticos do dia a dia em diversas áreas do conhecimento. Esses episódios conectam a teoria com a prática, facilitando a compreensão de conceitos complexos e promovendo um aprendizado mais dinâmico.",
       video_samba: [
@@ -517,27 +515,27 @@ const videos = {
     "Conteúdos audiovisuais em diversos formatos para aprofundar e enriquecer o estudo de temas específicos.",
   general_menu: [
     {
-      link_objeto: "",
+      link_objeto: "interativosh5p",
       objeto: "Interativos H5P",
     },
     {
-      link_objeto: "",
+      link_objeto: "interativoshtml",
       objeto: "Interativos HTML",
     },
     {
-      link_objeto: "",
+      link_objeto: "objetos3d",
       objeto: "Objetos 3D",
     },
     {
-      link_objeto: "",
-      objeto: "<i>Podcasts</i>",
+      link_objeto: "podcast",
+      objeto: "<i>Podcast</i>",
     },
     {
       link_objeto: "videos",
       objeto: "Vídeos",
     },
     {
-      link_objeto: "",
+      link_objeto: "imersivos",
       objeto: "Vídeos Imersivos",
     },
   ],
@@ -548,7 +546,7 @@ const videos = {
     },
     {
       id: "sub02",
-      objeto: "Vídeoaula Simulação",
+      objeto: "Videoaula Simulação",
     },
     {
       id: "sub03",
@@ -594,9 +592,9 @@ const videos = {
     },
     {
       id: "sub02",
-      objeto: "Vídeoaula Simulação",
+      objeto: "Videoaula Simulação",
       texto_objeto:
-        "Recriação realista de cenários que permite aos estudantes visualizar situações relacionadas ao conteúdo de suas aulas, tornando o aprendizado mais próximo da realidade. Essa abordagem facilita a compreensão de conceitos ao trazer o conteúdo para um contexto prático e visual.",
+        "Recriação realista de cenários que permite ao estudante visualizar situações relacionadas ao conteúdo de suas aulas, tornando o aprendizado mais próximo da realidade. Essa abordagem facilita a compreensão de conceitos ao trazer o conteúdo para um contexto prático e visual.",
       video_samba: [
         {
           titulo_objeto: "Entrevista inicial de Psicodiagnóstico",
@@ -647,27 +645,27 @@ const imersivos = {
     "Vídeos que envolvem o estudante de maneira profunda, utilizando a tecnologia para criar uma sensação imersiva no conteúdo.",
   general_menu: [
     {
-      link_objeto: "",
+      link_objeto: "interativosh5p",
       objeto: "Interativos H5P",
     },
     {
-      link_objeto: "",
+      link_objeto: "interativoshtml",
       objeto: "Interativos HTML",
     },
     {
-      link_objeto: "",
+      link_objeto: "objetos3d",
       objeto: "Objetos 3D",
     },
     {
-      link_objeto: "",
-      objeto: "<i>Podcasts</i>",
+      link_objeto: "podcast",
+      objeto: "<i>Podcast</i>",
     },
     {
       link_objeto: "videos",
       objeto: "Vídeos",
     },
     {
-      link_objeto: "",
+      link_objeto: "imersivos",
       objeto: "Vídeos Imersivos",
     },
   ],
