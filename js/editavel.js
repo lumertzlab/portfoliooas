@@ -32,7 +32,7 @@ const input = {
       img_objeto: "banner-podcast.png",
       titulo_objeto: "<i>Podcast</i>",
       texto_objeto:
-        "Podcasts com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
+        "<i>Podcasts</i> com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
       link_objeto: "podcast",
     },
     {
@@ -46,7 +46,7 @@ const input = {
       img_objeto: "banner_videos-imersivos.png",
       titulo_objeto: "Vídeos Imersivos",
       texto_objeto:
-        "Vídeos que envolvem o estudante de maneira profunda, utilizando a tecnologia para criar uma sensação imersiva no conteúdo.",
+        "Vídeos que envolvem o estudante de maneira profunda, utilizando a tecnologia para criar uma imersão no conteúdo.",
       link_objeto: "imersivos",
     },
   ],
@@ -85,12 +85,8 @@ const interativosh5p = {
   ],
   item_menu: [
     {
-      id: "sub01",
-      objeto: "Interativos H5P",
-    },
-    {
       id: "sub02",
-      objeto: "Drag and Drop",
+      objeto: "<i>Drag and Drop</i>",
     },
     {
       id: "sub03",
@@ -99,22 +95,8 @@ const interativosh5p = {
   ],
   item: [
     {
-      id: "sub01",
-      objeto: "Interativos H5P",
-      texto_objeto:
-        "Peça gráfica desenvolvida com H5P, que permite interação direta com o conteúdo através de atividades integradas. O aluno pode explorar e interagir com diversos elementos, proporcionando uma compreensão mais profunda do material.",
-      h5p: [
-        {
-          titulo_objeto: "Gestão de Conflitos",
-          area: "Sociais aplicadas",
-          ua: ": Games",
-          link_h5p: "https://imersys.h5p.com/content/1292110830747511787/embed",
-        },
-      ],
-    },
-    {
       id: "sub02",
-      objeto: "Drag and Drop",
+      objeto: "<i>Drag and Drop</i>",
       texto_objeto:
         "Atividades desenvolvidas com o uso de H5P que utilizam a funcionalidade de arrastar e soltar. Essa abordagem permite ao aluno mover itens para posições específicas, facilitando a compreensão e a organização dos conceitos de maneira prática e interativa.",
       h5p: [
@@ -131,16 +113,10 @@ const interativosh5p = {
           link_h5p: "https://imersys.h5p.com/content/1291741907095473537/embed",
         },
         {
-          titulo_objeto: "Pré-molares superiores",
+          titulo_objeto: "O coração e o ciclo cardíaco",
           area: "Saúde",
-          ua: "50211",
-          link_h5p: "https://imersys.h5p.com/content/1291806098239349887/embed",
-        },
-        {
-          titulo_objeto: "Modos de transporte e suas características",
-          area: "Sociais aplicadas",
-          ua: "24764",
-          link_h5p: "https://imersys.h5p.com/content/1291538711261996687/embed",
+          ua: "519",
+          link_h5p: "https://imersys.h5p.com/content/1291605407022107307/embed",
         },
       ],
     },
@@ -219,7 +195,7 @@ const interativohtml = {
     },
     {
       id: "sub04",
-      objeto: "Slider",
+      objeto: "<i>Slider</i>",
     },
   ],
   item: [
@@ -270,7 +246,7 @@ const interativohtml = {
         "Peça gráfica desenvolvida em HTML que utiliza uma ferramenta de comparação visual. Esta ferramenta permite a exibição de imagens divididas em duas partes, que podem ser arrastadas para revelar ou ocultar diferentes aspectos.",
       interativo_html: [
         {
-          titulo_objeto: "Mindset",
+          titulo_objeto: "<i>Mindset</i>",
           area: "Sociais Aplicadas",
           ua: "27704",
           interativo: "int-antes-depois-27704",
@@ -279,9 +255,9 @@ const interativohtml = {
     },
     {
       id: "sub04",
-      objeto: "Slider",
+      objeto: "<i>Slider</i>",
       texto_objeto:
-        "Apresentação desenvolvida em HTML que permite ao aluno navegar por uma sequência de slides de forma interativa, avançando ou retornando entre diferentes telas de conteúdo. Cada slide pode incluir texto, imagens, gráficos ou outros elementos visuais, proporcionando uma forma estruturada e sequencial de explorar informações.",
+        "Apresentação desenvolvida em HTML que permite ao aluno navegar por uma sequência de <i>slides</i> de forma interativa, avançando ou retornando entre diferentes telas de conteúdo. Cada <i>slide</i> pode incluir texto, imagens, gráficos ou outros elementos visuais, proporcionando uma forma estruturada e sequencial de explorar informações.",
       interativo_html: [
         {
           titulo_objeto: "Formação da língua latina",
@@ -434,7 +410,7 @@ const podcast = {
   img_hero: "banner-podcast-2.png",
   titulo_hero: "<i>Podcast</i>",
   texto_hero:
-    "Podcasts com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
+    "<i>Podcasts</i> com especialistas discutindo temas práticos do dia a dia em diversas áreas do conhecimento.",
   general_menu: [
     {
       link_objeto: "interativosh5p",
